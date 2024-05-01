@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="images/plm.ico" type="image/x-icon">
+    <title>Pamantasan ng Lungsod ng Maynila</title>
+    <style>
+        .white-icon {
+            color: white;
+        }
+        .gold-text {
+            color: gold;
+        }
+        /* Your CSS styles go here */
+        form .buttons{
+            display: flex;
+        }
+
+        .main-content .banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: azure;
+    color: #fff;
+    width: 100%;
+    height: 35rem;
+    background: url(../images/plm.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    margin: 3rem 0;
+}
+    </style>
+</head>
+<body>
+    <div class="heading">
+        <!-- logo -->
+        <div class="logo">
+            <a href="index.html">
+                <img src="../images/logo.png" alt="">
+            </a>
+        </div>
+        <!-- Nav Bar -->
+        <div class="navbar">
+            <a href="../index.html" class="active">Home</a>
+            <a href="#">Colleges</a>
+            <a href="#">Course</a>
+            <a href="web2.html">Enrollment</a>
+            <a href="#">Contacts</a>
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="welcome">
+        </div>
+        <div class="banner">
+            <br>
+            <br>
+            </div>
+        </div>
+        <div class="container">
+            <br><br>
+            <br><br>
+            <header>Registration</header>
+            <form id="enrollmentForm" action="#">
+                <div class="form first">
+                    <div class="details personal">
+                        <span class="title">Personal Details</span>
+                        <div class="fields">
+                            <div class="input-field">
+                                <label>Student Full Name</label>
+                                <input type="text" placeholder="Enter your name" required>
+                            </div>
+                            <div class="input-field">
+                                <label>Date of Birth</label>
+                                <input type="date" placeholder="Enter birth date" required>
+                            </div>
+                            <div class="input-field">
+                                <label>Email</label>
+                                <input type="text" placeholder="Enter your email" required>
+                            </div>
+                            <div class="input-field">
+                                <label>Mobile Number</label>
+                                <input type="number" placeholder="Enter mobile number" required>
+                            </div>
+                            <div class="input-field">
+                                <label>Gender</label>
+                                <select required>
+                                    <option disabled selected>Select gender</option>
+                                    <option>Male</option>
+                                    <option>Female</option>
+                                    <option>Others</option>
+                                </select>
+                            </div>
+                            <div class="input-field">
+                                <label>School</label>
+                                <input type="text" placeholder="Enter your School" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="details ID">
+                        <span class="title">Identity Details</span>
+                        <div class="fields">
+                            <div class="input-field">
+                                <label>ID Number</label>
+                                <input type="text" placeholder="Enter ID Number" required>
+                            </div>
+                            <div class="input-field">
+                                <label>Year/Section</label>
+                                <input type="number" placeholder="Enter Year/Section" required>
+                            </div>
+                            <div class="input-field">
+                                <label>Last School Year Attended</label>
+                                <input type="text" placeholder="Enter Last School Year Attended" required>
+                            </div>
+                            <div class="input-field">
+                                <label>Course</label>
+                                <input type="text" placeholder="Enter Course" required>
+                            </div>
+                            <div class="input-field">
+                                <label>Request Date</label>
+                                <input type="date" placeholder="Enter your issued request date" required>
+                            </div>
+                            <div class="input-field">
+                                <label>Claim Date</label>
+                                <input type="date" placeholder="Enter claim date" required>
+                            </div>
+                            <div class="input-field">
+                        </div>
+                        <div class="buttons">
+                            <button class="submitBtn" type="submit">Submit</button>
+                            <button type="button" class="clearBtn" onclick="clearForm()">Clear</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <br><br>
+    <div class="footer">
+        <p>&copy; Pamantasan ng Lungsod ng Maynila <br> University of the City Manila <br> Gen. Luna corner Muralla St., Intramuros
+        Manila, Philippines 1002. <br><br>All Rights Reserved.</p>
+        <br><p>Developed by: <a href="https://www.facebook.com/pickl.piee" class="gold-text">Gene Elpie L. Landoy</a> & <a href="https://www.facebook.com/profile.php?id=100006374927201&sk=about" class="gold-text">Jessieca Sadiwa</a></p>
+        <a href="https://www.facebook.com"><i class="fab fa-facebook white-icon"></i></a>
+        <a href="https://www.x.com"><i class="fab fa-twitter white-icon"></i></a>
+        <a href="https://www.rss.com"><i class="fas fa-rss white-icon"></i></a>
+        <a href="https://www.youtube.com"><i class="fab fa-youtube white-icon"></i></a>
+    </div>
+    <script src="../app.js"></script>
+    <script>
+        function clearForm() {
+            document.getElementById("enrollmentForm").reset();
+        }
+    </script>
+</body>
+</html>
